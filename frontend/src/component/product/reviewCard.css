@@ -1,0 +1,26 @@
+.reviewCard {
+  flex: none;
+  border: 1px solid rgb(206, 200, 200);
+  box-shadow: 0 0 5px rgb(196, 192, 192);
+  width: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+  padding: 3vmax;
+}
+
+.reviewCard .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  background-color: rgb(1, 65, 1);
+  color: white;
+  padding: 0.1rem 0.3rem;
+  border-radius: 50px;
+}
+.reviewCard img {
+  width: 50px;
+}

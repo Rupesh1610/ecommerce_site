@@ -1,0 +1,170 @@
+.loginSignupContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0;
+}
+
+.loginSignupBox {
+  background-color: white;
+  width: 25vw;
+  height: 55vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.loginSignup_toggle {
+  display: flex;
+  height: 2vmax;
+}
+
+.loginSignup_toggle p {
+  transition: all 0.5s;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  place-items: center;
+  display: grid;
+  width: 100%;
+}
+
+.loginSignup_toggle p:hover {
+  color: tomato;
+}
+
+.loginSignupBox div button {
+  background-color: tomato;
+  height: 3px;
+  width: 50%;
+  border: none;
+  transition: all 0.5s;
+}
+
+.login_form,
+.signup_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  height: 70%;
+  transition: all 0.5s;
+}
+
+.signup_form {
+  transform: translateY(-100%) translateX(-100vmax);
+}
+
+.login_form div,
+.signup_form div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.login_form div input,
+.signup_form div input {
+  padding: 1vmax 3vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+  outline: none;
+}
+
+.signup_form div input {
+  padding: 0.6vmax 3vmax;
+  padding-right: 1vmax;
+}
+
+.login_form div svg,
+.signup_form div svg {
+  position: absolute;
+  margin-left: 0.5vmax;
+}
+
+.login_form a {
+  text-decoration: none;
+  align-self: flex-end;
+}
+.login_form a:hover {
+  color: black;
+}
+
+.registerImage img {
+  width: 2.5vmax;
+  border-radius: 100%;
+  margin-right: 0.3vmax;
+}
+
+.registerImage input[type="file"] {
+  display: flex;
+  padding: 0%;
+}
+
+.registerImage input::file-selector-button {
+  width: 100%;
+  height: 5vh;
+  cursor: pointer;
+  z-index: 2;
+  margin: 0%;
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+.loginBtn,
+.signupBtn {
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 1vmax;
+  transition: all 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+  transform: translateX(100%);
+}
+
+@media screen and (max-width: 600px) {
+  .loginSignupBox {
+    background-color: white;
+    width: 80vw;
+    height: 60vh;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .login_form div input,
+  .signup_form div input {
+    padding: 1vmax 5vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+  }
+}

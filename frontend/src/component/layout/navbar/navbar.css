@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+#navbar {
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(to right, #635dc0, #3027ae);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1000000000000;
+}
+
+.left_nav img {
+  width: 11rem;
+  cursor: pointer;
+}
+
+.left_nav .menu {
+  display: none;
+}
+
+.mid_nav ul {
+  margin: 1.5rem auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+}
+
+.mid_nav ul li {
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.right_nav {
+  display: flex;
+  flex-direction: row;
+  height: 0;
+  margin: 2rem 2rem;
+}
+
+.nav_link {
+  font-family: "Dancing Script", cursive;
+  text-decoration: none;
+  color: white;
+}
+
+.search_icon {
+  margin: 0 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.cart_icon {
+  margin: 0 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.profile_icon {
+  color: white;
+  margin: 0 1rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .mid_nav {
+    display: none;
+  }
+
+  .left_nav img {
+    display: none;
+  }
+
+  .left_nav .menu {
+    display: block;
+  }
+
+  .menu {
+    color: white;
+    cursor: pointer;
+    margin: 1.5rem 1rem;
+  }
+}

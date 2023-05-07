@@ -1,0 +1,120 @@
+.product_details {
+  width: 100vw;
+  max-width: 100%;
+  padding: 3vmax;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.slider {
+  position: relative;
+  width: 35rem;
+  height: 35rem;
+  overflow: hidden;
+}
+
+.product_details > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3vmax;
+  box-sizing: border-box;
+}
+
+.product_details > div:last-child {
+  align-items: flex-start;
+  width: 50%;
+}
+
+.detailsBlock-1 h2 {
+  color: rgba(54, 54, 54, 0.582);
+  font: 600 1.6vmax "monsterat";
+}
+
+.detailsBlock-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  width: 20%;
+  padding: 1vmax 0;
+}
+
+.detailsBlock-2 span {
+  color: rgba(54, 54, 54, 0.582);
+  font: 200 1vmax "montserat";
+}
+
+.detailsBlock-3 {
+  width: 70%;
+}
+
+.detailsBlock-3 h1 {
+  color: rgba(17, 17, 17, 0.795);
+  font: 400 1.8vmax "cursive";
+  margin: 1vmax 0;
+}
+
+.detailsBlock-3-1-1 {
+  display: flex;
+}
+
+.detailsBlock-3-1-1 p {
+  background-color: rgb(58, 56, 56);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.detailsBlock-3-1-1 button {
+  padding: 0 0.5rem;
+}
+
+.detailsBlock-3-1 .addToCart {
+  border: none;
+  outline: none;
+  background-color: tomato;
+  color: white;
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+  margin: 0.5rem auto;
+  cursor: pointer;
+}
+
+.submitReview {
+  border: none;
+  outline: none;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.5s;
+}
+
+.submitReview:hover {
+  transform: scale(1.1);
+}
+
+.reviewsHeading {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 2rem auto;
+  width: 10%;
+}
+
+.reviews {
+  display: flex;
+  overflow: auto;
+}
+.noReviews {
+  color: blue;
+  font: 400;
+  text-align: center;
+}
